@@ -1,5 +1,5 @@
 import { isSlice, slice } from 'jslice';
-import { hasAColon } from 'whichtype';
+import { hasAColon, isArray, isArrayOfStrings } from 'whichtype';
 import { Transformer } from './transformer';
 import { findArrayIndex, findObjectKey } from './findsimilar';
 import { CmdOptions } from './cmdoptions';
@@ -7,6 +7,9 @@ import { CmdOptions } from './cmdoptions';
 
 
 export function josn (jo: any, keyArgs: string[], cmdOptions: CmdOptions) {
+	if (!isArrayOfStrings(keyArgs)) return jo;
+	if (!jo) return jo;
+
 	let currentJo = jo;
 	for (const keyArg of keyArgs) {
 		const isArray = currentJo.constructor === Array;
