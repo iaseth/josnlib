@@ -1,8 +1,13 @@
 import JSON5 from 'json5';
+import { isString } from 'whichtype';
 
 
 
 export function parseJsonString (jsonText: string): any|null {
+	if (!isString(jsonText)) {
+		return null;
+	}
+
 	try {
 		const jsonObject = JSON.parse(jsonText);
 		return jsonObject;
