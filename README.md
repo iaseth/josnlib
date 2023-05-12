@@ -33,7 +33,7 @@ npm i josnlib
 | `Name`         | `Value`                             |
 | -------------- | ----------------------------------- |
 | `Name`         | `josnlib`                           |
-| `Version`      | `0.10.0`                            |
+| `Version`      | `0.11.0`                            |
 | `Author`       | `iaseth`                            |
 | `Homepage`     | `https://github.com/iaseth/josnlib` |
 | `Repository`   | `iaseth/josnlib`                    |
@@ -45,7 +45,7 @@ npm i josnlib
 ## Dependencies
 |     | `Package`    | `Version`   |
 | --- | ------------ | ----------- |
-| 1   | `jslice`     | `^0.10.0`   |
+| 1   | `jslice`     | `^0.11.0`   |
 | 2   | `json5`      | `^2.2.3`    |
 | 3   | `jtransform` | `^0.3.0`    |
 | 4   | `whichtype`  | `^1.4.0`    |
