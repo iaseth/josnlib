@@ -13,6 +13,8 @@ export function findObjectKey (keyArg: string, object: any, cmdOptions: CmdOptio
 		return keyArg;
 	}
 
+	if (!cmdOptions) return keyArg; // return if cmdOptions not provided
+
 	const lowKey = keyArg.toLowerCase();
 	const objectKeysLower = objectKeys.map(k => k.toLowerCase());
 	const lowKeyIndex = objectKeysLower.findIndex(k => k === lowKey);
