@@ -4,12 +4,12 @@
 written in `JavaScript` and `TypeScript`.
 `josnlib` can be used in the browser as well as in `NodeJS`.
 
-I am using [`readmix`](https://github.com/iaseth/readmix) for generating this README.
-You can view the source file [here](https://github.com/iaseth/josnlib/blob/master/README.md.rx).
-
 `josnlib` depends on [`whichtype`](https://github.com/iaseth/whichtype), [`jslice`](https://github.com/iaseth/jslice)
 and [`jtransform`](https://github.com/iaseth/jtransform), all of which were originally part of [`iaseth/josn`](https://github.com/iaseth/josn),
 but were later made separate packages to allow for easier testing and code reuse.
+
+I am using [`readmix`](https://github.com/iaseth/readmix) for generating this README.
+You can view the source file [here](https://github.com/iaseth/josnlib/blob/master/README.md.rx).
 
 
 ## Table of contents
