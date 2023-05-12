@@ -1,0 +1,20 @@
+{
+  "name": "josnlib",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "testwatch": "jest --watchAll --verbose"
+  },
+  "keywords": [
+    "json",
+    "viewer",
+    "browser"
+  ],
+  "author": "iaseth",
+  "homepage": "https://github.com/iaseth/josnlib",
+  "repository": "iaseth/josnlib",
+  "license": "MIT"
+}
