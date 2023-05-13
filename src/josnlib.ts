@@ -1,4 +1,4 @@
 
 export { josn } from "./josn";
-export { CmdOptions, flags, getCmdOptions } from "./cmdoptions";
+export { classifyArgs, CmdOptions, flags, getCmdOptions } from "./cmdoptions";
 export { parseJsonString } from "./parseJsonString";

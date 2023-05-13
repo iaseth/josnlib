@@ -1,7 +1,19 @@
 import { isDoubleFlag, isSingleFlag } from 'whichtype';
 import flagsJson from './flags.json';
 
+const whichtype = require("whichtype");
 
+
+
+export function classifyArgs (args: string[]): string[][] {
+	if (!whichtype.isArrayOfStrings(args)) {
+		return [[], []];
+	}
+
+	const nonFlagArgs = args.filter(whichtype.isNotFlag);
+	const flagArgs = args.filter(whichtype.isFlag);
+	return [nonFlagArgs, flagArgs];
+}
 
 export class CmdOptions {
 	console: boolean = false;        // use console.log() for printing selected object
@@ -41,8 +53,6 @@ export interface FlagType {
 
 export const flags: FlagType[] = flagsJson.flags;
 
-
-
 export function getCmdOptions (flagArgs: string[]) : CmdOptions {
 	const cmdOptions: CmdOptions = new CmdOptions();
 
@@ -59,5 +69,3 @@ export function getCmdOptions (flagArgs: string[]) : CmdOptions {
 
 	return cmdOptions;
 }
-
-
