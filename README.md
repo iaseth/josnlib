@@ -16,6 +16,7 @@ You can view the source file [here](https://github.com/iaseth/josnlib/blob/maste
 * [josnlib](#josnlib)
     * [Table of contents](#table-of-contents)
     * [Installation](#installation)
+    * [List of flags](#list-of-flags)
     * [Package details](#package-details)
     * [Dependencies](#dependencies)
     * [Dev dependencies](#dev-dependencies)
@@ -27,6 +28,37 @@ You can install [`josnlib`](https://www.npmjs.com/package/josnlib) with the foll
 ```
 npm i josnlib
 ```
+
+
+## List of flags
+
+| Short | Long | Description |
+| ----- | ---- | ----------- |
+| -c | --console | Use console.log() for printing selected object. |
+| -d | --dir | Use console.dir() for printing selected object. |
+| -D | --debug | Turns debug mode ON. |
+| -E | --exact | Turns exact mode ON. |
+| -F | --force | Force update files. |
+| -g | --green | Green is for the environment. |
+| -h | --help | Show help. |
+| -i | --ignore-case | Ignore case (default). |
+|  | --license | Print the LICENSE. |
+| -l | --list | List all input files. |
+| -m | --minify | Minify the output. |
+| -n | --no-ignore-case | Do not ignore case. |
+| -p | --plaintext | Output plaintext. |
+|  | --print-args | Just print the arguments. |
+|  | --print-demos | Just print the demos. |
+|  | --print-flags | Just print the flags. |
+| -q | --quiet | Turns quiet mode ON. |
+| -s | --spaces2 | Indent with 2 spaces. |
+| -S | --spaces4 | Indent with 4 spaces. |
+| -t | --table | Print output as a table. |
+| -T | --tabs | Indent with Tabs. |
+| -v | --version | Print version. |
+| -w | --watch | Watch input files for changes. |
+| -x | --experimental | Turns experimental mode ON. |
+| -Z | --zen | Turns zen mode ON. |
 
 
 ## Package details
