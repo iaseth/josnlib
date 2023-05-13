@@ -48,7 +48,7 @@ npm i josnlib
 | 1   | `jslice`     | `^0.11.0`   |
 | 2   | `json5`      | `^2.2.3`    |
 | 3   | `jtransform` | `^0.3.0`    |
-| 4   | `whichtype`  | `^1.4.0`    |
+| 4   | `whichtype`  | `^1.5.0`    |
 
 
 
