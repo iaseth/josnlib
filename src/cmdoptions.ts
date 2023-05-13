@@ -10,9 +10,9 @@ export function classifyArgs (args: string[]): string[][] {
 		return [[], []];
 	}
 
-	const nonFlagArgs = args.filter(whichtype.isNotFlag);
 	const flagArgs = args.filter(whichtype.isFlag);
-	return [nonFlagArgs, flagArgs];
+	const nonFlagArgs = args.filter(whichtype.isNotFlag);
+	return [flagArgs, nonFlagArgs];
 }
 
 export class CmdOptions {
