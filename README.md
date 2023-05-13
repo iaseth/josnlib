@@ -33,7 +33,7 @@ npm i josnlib
 | `Name`         | `Value`                             |
 | -------------- | ----------------------------------- |
 | `Name`         | `josnlib`                           |
-| `Version`      | `0.11.0`                            |
+| `Version`      | `0.12.0`                            |
 | `Author`       | `iaseth`                            |
 | `Homepage`     | `https://github.com/iaseth/josnlib` |
 | `Repository`   | `iaseth/josnlib`                    |
