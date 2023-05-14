@@ -1,4 +1,4 @@
-import { isDoubleFlag, isSingleFlag } from 'whichtype';
+import { isArrayOfStrings, isDoubleFlag, isSingleFlag } from 'whichtype';
 import flagsJson from './flags.json';
 
 const whichtype = require("whichtype");
@@ -53,10 +53,17 @@ export interface FlagType {
 }
 
 export const flags: FlagType[] = flagsJson.flags;
+export const commandFlags: FlagType[] = flags.filter(flag => flag.isCommand);
+export const nonCommandFlags: FlagType[] = flags.filter(flag => !flag.isCommand);
+
+export const defaultCmdOptions: CmdOptions = new CmdOptions();
 
 export function getCmdOptions (flagArgs: string[]) : CmdOptions {
-	const cmdOptions: CmdOptions = new CmdOptions();
+	if (!isArrayOfStrings(flagArgs)) {
+		return defaultCmdOptions;
+	}
 
+	const cmdOptions: CmdOptions = new CmdOptions();
 	const singleFlags = flagArgs.filter(isSingleFlag);
 	const singleFlagsString = singleFlags.join("");
 	const doubleFlags = flagArgs.filter(isDoubleFlag);

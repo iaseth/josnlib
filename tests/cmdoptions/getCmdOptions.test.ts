@@ -1,7 +1,7 @@
-const { getCmdOptions } = require("../../dist");
+const { defaultCmdOptions, getCmdOptions } = require("../../dist/cmdoptions");
 
 
 
 test("getCmdOptions", () => {
-	expect(null).toBe(null);
+	expect(getCmdOptions(null)).toStrictEqual(defaultCmdOptions);
 });
