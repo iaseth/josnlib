@@ -45,8 +45,9 @@ export class CmdOptions {
 
 export interface FlagType {
 	isCommand: boolean,
+	isDone?: boolean,
 	name: string,
-	singleFlag: string,
+	singleFlag?: string,
 	doubleFlag: string,
 	description: string
 }
@@ -61,8 +62,10 @@ export function getCmdOptions (flagArgs: string[]) : CmdOptions {
 	const doubleFlags = flagArgs.filter(isDoubleFlag);
 
 	flags.forEach(flag => {
-		const singleFlagChar = flag.singleFlag[1];
-		if (singleFlagsString.includes(singleFlagChar) || doubleFlags.includes(flag.doubleFlag)) {
+		const singleFlagChar = flag.singleFlag ? flag.singleFlag[1] : false;
+		if (singleFlagChar && singleFlagsString.includes(singleFlagChar)) {
+			(cmdOptions as any)[flag.name] = true;
+		} else if (doubleFlags.includes(flag.doubleFlag)) {
 			(cmdOptions as any)[flag.name] = true;
 		}
 	});
