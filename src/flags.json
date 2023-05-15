@@ -18,6 +18,7 @@
 		{"isCommand": true, "isDone": true, "name": "printDemos", "doubleFlag": "--print-demos", "description": "Just print the demos."},
 		{"isCommand": true, "isDone": true, "name": "printFlags", "doubleFlag": "--print-flags", "description": "Just print the flags."},
 		{"isCommand": false, "name": "quiet", "singleFlag": "-q", "doubleFlag": "--quiet", "description": "Turns quiet mode ON."},
+		{"isCommand": true, "name": "repl", "doubleFlag": "--repl", "description": "Opens the REPL."},
 
 		{"isCommand": false, "isDone": true, "name": "spaces2", "singleFlag": "-s", "doubleFlag": "--spaces2", "description": "Indent with 2 spaces."},
 		{"isCommand": false, "isDone": true, "name": "spaces4", "singleFlag": "-S", "doubleFlag": "--spaces4", "description": "Indent with 4 spaces."},

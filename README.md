@@ -51,6 +51,7 @@ npm i josnlib
 |  | --print-demos | Just print the demos. | &check; |
 |  | --print-flags | Just print the flags. | &check; |
 | -q | --quiet | Turns quiet mode ON. | &cross; |
+|  | --repl | Opens the REPL. | &cross; |
 | -s | --spaces2 | Indent with 2 spaces. | &check; |
 | -S | --spaces4 | Indent with 4 spaces. | &check; |
 | -t | --table | Print output as a table. | &check; |
@@ -65,7 +66,7 @@ npm i josnlib
 | `Name`         | `Value`                             |
 | -------------- | ----------------------------------- |
 | `Name`         | `josnlib`                           |
-| `Version`      | `0.17.0`                            |
+| `Version`      | `0.18.0`                            |
 | `Author`       | `iaseth`                            |
 | `Homepage`     | `https://github.com/iaseth/josnlib` |
 | `Repository`   | `iaseth/josnlib`                    |

@@ -33,6 +33,7 @@ export class CmdOptions {
 	printDemos: boolean = false;
 	printFlags: boolean = false;
 	quiet: boolean = false;          // Quiet mode on/off
+	repl: boolean = false;
 	spaces2: boolean = false;
 	spaces4: boolean = false;
 	table: boolean = false;
