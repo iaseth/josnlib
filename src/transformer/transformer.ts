@@ -28,7 +28,26 @@ export class Transformer {
 			case "is": this.command = "select"; break;
 			case "not": this.command = "drop"; break;
 
+			case "where": case "w": this.command = "where"; break;
+			case "greaterthan": case "gt": this.command = "where"; break;
+			case "lessthan": case "lt": this.command = "where"; break;
+			case "equal": case "eq": this.command = "where"; break;
+			case "true": this.command = "true"; break;
+			case "false": this.command = "false"; break;
+			case "default": this.command = "where"; break;
+
 			case "has": this.command = "has"; break;
+			case "hasnt": this.command = "hasnt"; break;
+
+			// arithmetic commands
+			case "add": this.command = "add"; break;
+			case "sub": this.command = "sub"; break;
+			case "mul": this.command = "mul"; break;
+			case "div": this.command = "div"; break;
+			case "mod": this.command = "mod"; break;
+
+			case "head": this.command = "head"; break;
+			case "tail": this.command = "tail"; break;
 
 			case "flat": case "f": this.command = "flat"; break;
 			case "group": case "g": this.command = "group"; break;
@@ -40,7 +59,8 @@ export class Transformer {
 			case "reverse": case "r": this.command = "reverse"; break;
 			case "unique": case "u": this.command = "unique"; break;
 
-			case "shell": case "$": this.command = "shell"; break;
+			case "shell": case "sh": this.command = "shell"; break;
+			case "schema": case "sc": this.command = "schema"; break;
 
 			// work on array of strings
 			case "capital": this.command = "capital"; break;
